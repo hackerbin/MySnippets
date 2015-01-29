@@ -51,5 +51,5 @@ php app/console generate:bundle --namespace=Custom/CMSBundle --format=yml
 
 php app/console server:run
 
-http://localhost:8000/hello/sazal
+http://localhost:8000/hello/robin
 -------------- write this on browser ------------------------
