@@ -1,0 +1,55 @@
+-------server restart ------
+
+sudo /etc/init.d/apache2 restart
+________________________________________
+choose the istallation directory www
+
+composer create-project symfony/framework-standard-edition cms/ '~2.6.3' 
+----------here cms is project name -------------------
+_______________________________________________________________
+
+Would you like to install Acme demo bundle? [y/N] n
+_______________________________________________________________
+
+database_driver (pdo_mysql):     -- press enter --
+___________________________________________________
+database_host (127.0.0.1):       -- press enter --
+___________________________________________________
+database_port (null):            -- press enter --
+___________________________________________________
+database_name (symfony): cms     -- write db name --
+___________________________________________________
+database_user (root):            -- press enter --
+___________________________________________________
+database_password (null): 1      -- write db password --
+___________________________________________________
+mailer_transport (smtp):         -- press enter --
+___________________________________________________
+mailer_host (127.0.0.1):         -- press enter --
+___________________________________________________
+mailer_user (null):              -- press enter --
+___________________________________________________
+mailer_password (null):          -- press enter --
+___________________________________________________
+locale (en):                     -- press enter --
+_____________________________________________________________________________________________________________________________
+secret (ThisTokenIsNotSoSecretChangeIt): dtghfhgfghfhj56465465         -------- a random security Token as wish  -----------
+______________________________________________________________________________________________________________________________
+==============================================================================================================================
+
+
+
+php app/check.php
+================================
+php app/console doctrine:database:create
+================================
+
+php app/console generate:bundle --namespace=Custom/CMSBundle --format=yml
+
+------------ here Custom is namespace and CMSBundle is bundle name ---------------
+============================================================================
+
+php app/console server:run
+
+http://localhost:8000/hello/sazal
+-------------- write this on browser ------------------------
